@@ -101,12 +101,14 @@ const ArtistRoster = () => {
                     Bookings &amp; Enquiries
                   </p>
                   <div className="space-y-1.5">
-                    <a
-                      href={`mailto:${artist.bookingEmail}`}
-                      className="block text-gold/70 text-sm hover:text-gold transition-colors"
-                    >
-                      {artist.bookingEmail}
-                    </a>
+                    {artist.bookingEmail && (
+                      <a
+                        href={`mailto:${artist.bookingEmail}`}
+                        className="block text-gold/70 text-sm hover:text-gold transition-colors"
+                      >
+                        {artist.bookingEmail}
+                      </a>
+                    )}
                     {artist.generalEmail && (
                       <a
                         href={`mailto:${artist.generalEmail}`}
