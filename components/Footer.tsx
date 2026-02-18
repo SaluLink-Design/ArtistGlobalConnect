@@ -7,13 +7,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="w-8 h-8 border border-gold flex items-center justify-center">
-                <span className="text-white font-display text-xs font-bold tracking-widest">AGC</span>
-              </span>
-              <span className="font-display text-sm font-semibold tracking-[0.2em] text-white uppercase">
-                Artist Global Connect
-              </span>
+            <div className="mb-6">
+              <Image
+                src="/agc-logo.png"
+                alt="Artist Global Connect"
+                width={120}
+                height={60}
+                className="object-contain"
+              />
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               Strategic artist management for the business of music. Where talent meets structure, strategy, and corporate opportunity.
@@ -90,19 +91,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <Image
-              src="/agc-logo.png"
-              alt="Artist Global Connect"
-              width={48}
-              height={48}
-              className="object-contain opacity-80"
-            />
-            <p className="text-white/25 text-xs tracking-wider">
-              © {new Date().getFullYear()} Artist Global Connect. All rights reserved.
-            </p>
-          </div>
+        <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-white/25 text-xs tracking-wider">
+            © {new Date().getFullYear()} Artist Global Connect. All rights reserved.
+          </p>
           <p className="text-white/25 text-xs tracking-wider">
             Amapiano Artist Management · Brand Partnerships · Career Building
           </p>
