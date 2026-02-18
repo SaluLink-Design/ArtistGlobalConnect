@@ -1,11 +1,11 @@
 "use client";
 
 const videos = [
-  { src: "/videos/IMG_1587.MOV", label: "Live Session" },
-  { src: "/videos/IMG_1589.MOV", label: "Behind the Scenes" },
-  { src: "/videos/IMG_3008.mp4", label: "Artist Moments" },
-  { src: "/videos/IMG_3009.mp4", label: "On Stage" },
-  { src: "/videos/IMG_3010.mp4", label: "In the Studio" },
+  { src: "/videos/IMG_3008.mp4",       label: "Performance" },
+  { src: "/videos/IMG_3010.mp4",       label: "Performance" },
+  { src: "/videos/studio-session.mp4", label: "In the Studio" },
+  { src: "/videos/backstage-1.mp4",    label: "Behind the Stage" },
+  { src: "/videos/backstage-2.mp4",    label: "Behind the Stage" },
 ];
 
 const MediaHighlights = () => {
