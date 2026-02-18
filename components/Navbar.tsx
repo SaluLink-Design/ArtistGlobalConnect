@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -27,13 +28,15 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-3 group">
-          <span className="w-8 h-8 border border-gold flex items-center justify-center">
-            <span className="text-gold font-display text-xs font-bold tracking-widest">AGC</span>
-          </span>
-          <span className="font-display text-sm font-semibold tracking-[0.2em] text-white uppercase">
-            Artist Global Connect
-          </span>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/agc-logo.png"
+            alt="Africa Global Connect"
+            width={72}
+            height={72}
+            className="object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
