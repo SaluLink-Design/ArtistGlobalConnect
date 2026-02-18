@@ -23,10 +23,10 @@ const Footer = () => {
             <h4 className="text-xs tracking-[0.2em] uppercase text-gold mb-6">Navigation</h4>
             <ul className="space-y-4">
               {[
-                { label: "About", href: "#about" },
-                { label: "Services", href: "#services" },
-                { label: "Our Artists", href: "#artists" },
-                { label: "Approach", href: "#approach" },
+                { label: "About", href: "/#about" },
+                { label: "Services", href: "/#services" },
+                { label: "Our Artists", href: "/#artists" },
+                { label: "Approach", href: "/#approach" },
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.label}>
